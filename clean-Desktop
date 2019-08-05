@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo rm /Users/ryanprescott/Desktop/*.jpg
+sudo rm /Users/ryanprescott/Desktop/*.jpeg
+sudo rm /Users/ryanprescott/Desktop/*.png
+sudo rm /Users/ryanprescott/Desktop/*.log
+
+echo "Removed all jpg, jpeg, png, and log files from Desktop"
