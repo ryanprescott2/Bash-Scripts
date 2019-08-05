@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo Type number of seconds to start timer
+
+read seconds
+while ! [[ "$seconds" =~ ^[0-9]+$ ]];
+	do
+		echo "Please type an integer"
+		read seconds
+done
+
+for ((i= seconds; i>0; i--)); do sleep 1; printf "$i seconds left \r"; done
+echo -en "\007"
+
